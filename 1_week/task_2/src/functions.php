@@ -49,3 +49,28 @@ function task2(string $operation)
     }
     return $operand1;
 }
+
+function task3(int $heightTable, int $widthTable)
+{
+    if ($heightTable < 1 || $widthTable < 1) {
+        echo "Невозможно создать таблицу умножения $heightTable x $widthTable<br />\n";
+        echo "Размеры таблицы должны быть целыми числами больше 0";
+        return;
+    }
+
+    echo "<table border='1px' cellpadding='10' cellspacing='0'><caption>Таблица умножения $heightTable x $widthTable</caption>";
+    echo "<tr><th><b>*</b></th>";
+    for ($i = 1; $i <= $widthTable; $i++) {
+        echo "<th>$i</th>";
+    }
+    echo "</tr>";
+
+    for ($i = 1; $i <= $heightTable; $i++) {
+        echo "<tr> <td><b>$i</b></td> \n";
+        for ($y = 1; $y <= $widthTable; $y++) {
+            echo "<td><center>" . $i * $y . "</center></td> ";
+        }
+        echo "</tr>\n";
+    }
+    echo "</table>";
+}

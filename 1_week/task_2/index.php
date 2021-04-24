@@ -19,3 +19,13 @@ echo task2('*', 2, 3.5, 4), "<br />\n";
 echo task2('/', 2, 3.5, 4), "<br />\n";
 echo task2('+', 2), "<br />\n";
 echo task2('%', 2, 3.5, 4), "<br />\n";
+
+//task3
+echo "<br />\n";
+task3(7, 10);
+echo "<br />\n";
+task3(0, 10);
+echo "<br />\n";
+task3(3, 15);
+echo "<br />\n";
+task3(3, -10);
