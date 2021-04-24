@@ -25,24 +25,21 @@ function task2(string $operation)
     array_shift($operands);
     $operand1 = array_shift($operands);
 
-    if ($operation === '+') {
-        foreach ($operands as $operand) {
+    foreach ($operands as $operand) {
+        if ($operation === '+') {
             $operand1 += $operand;
-        }
-    } elseif ($operation === '-') {
-        foreach ($operands as $operand) {
+        } elseif ($operation === '-') {
             $operand1 -= $operand;
-        }
-    } elseif ($operation === '*') {
-        foreach ($operands as $operand) {
+        } elseif ($operation === '*') {
             $operand1 *= $operand;
-        }
-    } elseif ($operation === '/') {
-        foreach ($operands as $operand) {
+        } elseif ($operation === '/') {
+            if ($operand === 0) {
+                return "Деление на 0";
+            }
             $operand1 /= $operand;
+        } else {
+            return "Недопустимая операция $operation";
         }
-    } else {
-        return "Недопустимая операция $operation";
     }
     return $operand1;
 }

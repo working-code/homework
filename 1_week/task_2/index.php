@@ -19,6 +19,7 @@ echo task2('*', 2, 3.5, 4), "<br />\n";
 echo task2('/', 2, 3.5, 4), "<br />\n";
 echo task2('+', 2), "<br />\n";
 echo task2('%', 2, 3.5, 4), "<br />\n";
+echo task2('/', 2, 3.5, 0), "<br />\n";
 
 //task3
 echo "<br />\n";
