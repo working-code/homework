@@ -84,3 +84,17 @@ function task5()
 {
     echo strtotime("24.02.2016 00:00:00"), "<br />\n";
 }
+
+function task6()
+{
+    $str = "Карл у Клары украл Кораллы";
+    echo "Исходный текст: $str<br />\n";
+    echo "Результат: " . str_replace('К', '', $str), "<br />\n";
+}
+
+function task7()
+{
+    $str = "Две бутылки лимонада";
+    echo "Исходный текст: $str<br />\n";
+    echo "Результат: " . str_replace('Две', 'Три', $str);
+}
