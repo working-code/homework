@@ -74,3 +74,13 @@ function task3(int $heightTable, int $widthTable)
     }
     echo "</table>";
 }
+
+function task4()
+{
+    echo date("d.m.Y H:m"), "<br />\n";
+}
+
+function task5()
+{
+    echo strtotime("24.02.2016 00:00:00"), "<br />\n";
+}

@@ -29,3 +29,9 @@ echo "<br />\n";
 task3(3, 15);
 echo "<br />\n";
 task3(3, -10);
+echo "<br />\n";
+
+//task4
+task4();
+task5();
+
