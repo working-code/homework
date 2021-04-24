@@ -2,12 +2,9 @@
 
 function task1(array $arrayStrings, bool $print = false)
 {
-    array_walk(
-        $arrayStrings,
-        function (&$value, $key) {
-            $value = "<p>$value</p>";
-        }
-    );
+    foreach ($arrayStrings as &$str) {
+        $str = "<p>$str</p>";
+    }
 
     if ($print) {
         return implode(' ', $arrayStrings);
