@@ -25,5 +25,5 @@ $cars['opel'] = $opel;
 
 foreach ($cars as $carName => $carData) {
     echo "CAR $carName<br>\n";
-    echo "{$carData['model']} {$carData['spped']} {$carData['doors']} {$carData['year']}<br><br>\n\n";
+    echo implode(' ', $carData) . "<br><br>\n\n";
 }
