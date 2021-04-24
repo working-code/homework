@@ -38,3 +38,7 @@ task5();
 //task5
 task6();
 task7();
+
+//task6
+task8();
+task9('test.txt');

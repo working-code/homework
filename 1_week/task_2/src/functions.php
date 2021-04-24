@@ -58,7 +58,8 @@ function task3(int $heightTable, int $widthTable)
         return;
     }
 
-    echo "<table border='1px' cellpadding='10' cellspacing='0'><caption>Таблица умножения $heightTable x $widthTable</caption>";
+    echo "<table border='1px' cellpadding='10' cellspacing='0'>" .
+        "<caption>Таблица умножения $heightTable x $widthTable</caption>";
     echo "<tr><th><b>*</b></th>";
     for ($i = 1; $i <= $widthTable; $i++) {
         echo "<th>$i</th>";
@@ -96,5 +97,16 @@ function task7()
 {
     $str = "Две бутылки лимонада";
     echo "Исходный текст: $str<br />\n";
-    echo "Результат: " . str_replace('Две', 'Три', $str);
+    echo "Результат: " . str_replace('Две', 'Три', $str), "<br />\n";
+}
+
+function task8()
+{
+    $text = "Hello again!\n";
+    file_put_contents("test.txt", $text, FILE_APPEND);
+}
+
+function task9(string $nameFile)
+{
+    echo file_get_contents($nameFile);
 }
